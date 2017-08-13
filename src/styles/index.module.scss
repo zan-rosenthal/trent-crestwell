@@ -1,0 +1,59 @@
+@import './_variables';
+
+.boxContainer {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 40px;
+}
+
+.box {
+  align-items: center;
+  background: $cool-background;
+  border-radius: 3px;
+  border: $primary-accent 3px solid;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 30px;
+  width: 35%;
+}
+
+.bodyLink {
+  color: $secondary-accent;
+  font-size: 18px;
+  text-decoration: none;
+  text-shadow: none;
+  font-weight: 500;
+}
+
+.contentBody {
+  background: $white;
+  border-radius: 3px;
+  border: 5px solid $primary-accent;
+  padding: 10px 30px 30px;
+  width: 1000px;
+}
+
+.linkContainer {
+  margin-left: none;
+}
+
+.title {
+  display: flex;
+  margin: 10px;
+  color: $secondary-accent;
+}
+
+.header {
+  margin-left: 0;
+}
+
+.boxTitle {
+  color: $ternary-accent;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  span {
+    margin: 0 3px;
+  }
+}

@@ -1,20 +1,31 @@
 import React from "react"
 import Link from "gatsby-link"
 import ListLink from '../components/ListLink'
+import styles from '../styles/main.module.scss'
 
 export default ({ children }) =>
-  <div style={{ margin: `0 auto`, maxWidth: 1200, padding: `0 1rem` }}>
-    <div style={{ margin: `0 auto`, maxWidth: 1200, padding: `1.25rem 1rem` }}>
-    <header style={{ marginBottom: `1.5rem` }}>
-      <Link to="/" style={{ textShadow: `none`, backgroundImage: `none` }}>
-        <h3 style={{ display: `inline` }}>Chicago Feldenkrais</h3>
-      </Link>
-      <ul style={{ listStyle: `none`, float: `right` }}>
-        <ListLink to="/">Home</ListLink>
-        <ListLink to="/about/">About</ListLink>
-        <ListLink to="/contact/">Contact</ListLink>
-      </ul>
-    </header>
-    {children()}
+  <div className={styles.outerContainer}>
+    <div className={styles.innerContainer} >
+    <div className={styles.headerWrapper}>
+      <header className={styles.header}>
+        <Link to="/" style={{ textShadow: `none`, backgroundImage: `none` }}>
+          <h1 className={styles.siteTitle}>Chicago Feldenkrais</h1>
+        </Link>
+        <ul className={styles.nav}>
+          <ListLink
+            listClass={styles.linkContainer}
+            to="/classes/">Classes</ListLink>
+          <ListLink
+            listClass={styles.linkContainer}
+            to="/appointments/">Appointments</ListLink>
+          <ListLink
+            listClass={styles.linkContainer}
+            to="/about-trent/">About Trent</ListLink>
+        </ul>
+      </header>
+      </div>
+    <div className={styles.contentWrapper}>
+      {children()}
+    </div>
   </div>
 </div>
