@@ -8,7 +8,7 @@
 
 .box {
   align-items: center;
-  background: $cool-background;
+  background: $light-background;
   border-radius: 3px;
   border: $primary-accent 3px solid;
   display: flex;
@@ -30,6 +30,7 @@
   background: $white;
   border-radius: 3px;
   border: 5px solid $primary-accent;
+  color: $secondary-accent;
   padding: 10px 30px 30px;
   width: 1000px;
 }
@@ -41,7 +42,14 @@
 .title {
   display: flex;
   margin: 10px;
-  color: $secondary-accent;
+}
+
+.pageTitle {
+  color: $dark-gray;
+}
+
+.secondaryTitle {
+  color: $ternary-accent;
 }
 
 .header {
@@ -50,6 +58,7 @@
 
 .boxTitle {
   color: $ternary-accent;
+  font-weight: 300;
   flex-wrap: wrap;
   justify-content: center;
 

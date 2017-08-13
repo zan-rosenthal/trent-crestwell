@@ -1,9 +1,10 @@
 import React from "react"
+import styles from '../styles/index.module.scss'
 
 export default () =>
-  <div>
-    <h1>I'd love to talk! Email me at the address below</h1>
-    <p>
-      <a mailto="me@example.com">me@example.com</a>
-    </p>
+  <div
+    className={styles.contentBody}>
+    <h1 className={styles.pageTitle}>Classes</h1>
+    <h3 className={styles.secondaryTitle}>Awarness Through Movement is...</h3>
+    <p>A set of lessons taught in group classes where participants follow verbal instructions through slow movement sequences. Feldenkrais created over a thousand  *Awareness Through Movement *lessons. Most are done laying on the floor and explore developmental themes such as rolling, crawling, or the process by which one brings themselves to stand up from the floor.  There are also lessons done in sitting and standing.</p>
   </div>
