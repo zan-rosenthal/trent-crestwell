@@ -8,7 +8,7 @@ export default () =>
   <div className={styles.contentBody}>
     <div>
     <h1
-      className={cx(styles.title, styles.header)}>
+      className={cx(styles.pageTitle, styles.header)}>
       What is the Feldenkrais Method</h1>
     <p>
       The Feldenkrais Method is a movement method which emphasizes functionality and ease of movement. The method builds an awareness of parasitic habitual patterns in order to find new strategies towards more comfortable movement .
@@ -19,32 +19,26 @@ export default () =>
     <h5>The Feldenkrais Method consists of two practices: </h5>
     <div className={styles.boxContainer}>
       <div className={styles.box}>
-        <div>
-          <h4
-            className={cx(styles.title, styles.boxTitle)}>
-              <span>Awareness</span>
-              <span>Through </span>
-              <span>Movement</span>
-          </h4>
-        </div>
         <ListLink
           listClass={styles.linkContainer}
           linkClass={styles.bodyLink}
           to="/classes">
+          <h4
+            className={styles.linkTitle}>
+            Awareness Through Movement
+          </h4>
           See Class Schedule
         </ListLink>
       </div>
       <div className={styles.box}>
-        <div>
-          <h4
-            className={cx(styles.title, styles.boxTitle)}>
-            Functional Integration
-          </h4>
-        </div>
         <ListLink
           listClass={styles.linkContainer}
           linkClass={styles.bodyLink}
           to="/apointments">
+            <h4
+              className={styles.linkTitle}>
+              Functional Integration
+            </h4>
           Schedule an Appointment
         </ListLink>
       </div>

@@ -1,6 +1,7 @@
 @import './_variables';
 
 .listItem {
-  color: $primary-accent;
+  color: $secondary-accent;
   list-style: none;
+  background-image: none !important;
 }

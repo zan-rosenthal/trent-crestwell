@@ -8,18 +8,19 @@
 
 .box {
   align-items: center;
-  background: $light-background;
   border-radius: 3px;
-  border: $primary-accent 3px solid;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   padding: 30px;
-  width: 35%;
 }
 
 .bodyLink {
-  color: $secondary-accent;
+  align-items: center;
+  color: $dark-gray;
+  background: none;
+  display: flex;
+  flex-direction: column;
   font-size: 18px;
   text-decoration: none;
   text-shadow: none;
@@ -30,13 +31,18 @@
   background: $white;
   border-radius: 3px;
   border: 5px solid $primary-accent;
-  color: $secondary-accent;
   padding: 10px 30px 30px;
   width: 1000px;
 }
 
 .linkContainer {
+  display: flex;
+  justify-content: center;
   margin-left: none;
+  border: 1px solid $dark-gray;
+  border-radius: 5px;
+  padding: 20px;
+  width: 350px;
 }
 
 .title {
@@ -46,6 +52,7 @@
 
 .pageTitle {
   color: $dark-gray;
+  margin-top: 15px !important;
 }
 
 .secondaryTitle {
@@ -56,13 +63,11 @@
   margin-left: 0;
 }
 
-.boxTitle {
-  color: $ternary-accent;
+.linkTitle {
+  border-bottom: 2px solid $dark-gray;
+  color: $dark-gray;
   font-weight: 300;
   flex-wrap: wrap;
   justify-content: center;
-
-  span {
-    margin: 0 3px;
-  }
+  margin: 0 0 10px !important;
 }

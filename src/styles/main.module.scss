@@ -1,7 +1,11 @@
 @import './_variables';
 
+h1 {
+  margin-top: 0;
+}
+
 .outerContainer {
-  // background: $dark-background;
+  @include page-background;
   margin: 0 auto;
   padding: 0 1rem;
   height: 100%;
@@ -28,6 +32,19 @@
 .siteTitle {
   color: $secondary-accent;
   margin: 0 0 30px;
+
+  h5,
+  h1 {
+    margin: 5px 0;
+  }
+
+  h1 {
+    color: $primary-accent;
+  }
+
+  h5 {
+    color: $secondary-accent;
+  }
 }
 
 .headerWrapper,
@@ -47,5 +64,10 @@
 :global {
   a {
     color: $secondary-accent;
+    background: none;
   }
+}
+
+.navLink {
+  background: none;
 }
