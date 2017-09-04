@@ -5,6 +5,7 @@ import styles from '../styles/main.module.scss'
 
 export default ({ children }) =>
   <div className={styles.outerContainer}>
+    {/* <script src="https://d3gxy7nm8y4yjr.cloudfront.net/js/embed.js" type="text/javascript"></script> */}
     <div className={styles.innerContainer} >
     <div className={styles.headerWrapper}>
       <header className={styles.header}>
