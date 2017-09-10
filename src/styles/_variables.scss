@@ -20,7 +20,7 @@
 // filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#87a17b', endColorstr='#fff4ed', GradientType=0 );
 // }
 
-$accent: #119DA4;
+$accent: #628395;
 $header: #506C64;
 $white: #fff;
 $dark-gray: #403F4C;
@@ -28,7 +28,10 @@ $dark-background: #220C10;
 $light-complement: #99DDC8;
 $light-background: #CACACA;
 $dark-complement: $dark-background;
+$content-padding: 10px 10% 30px;
 
+// $header: #717C89;
+// $dark-background: #182327;
 
 
 @mixin page-background {

@@ -28,7 +28,7 @@
 
 .leftBox {
   background: $dark-background;
-  padding: 10px 30px 30px;
+  padding: $content-padding;
 
   .linkTitle,
   .bodyLink {
@@ -36,26 +36,32 @@
   }
 
   &:hover {
+    background: $white;
+    border: 5px solid $accent;
+
     .linkTitle,
     .bodyLink {
-      color: $white;
+      color: $accent;
     }
   }
 }
 
 .rightBox {
   background: $light-background;
-  padding: 10px 30px 30px;
+  padding: $content-padding;
 
   .linkTitle,
   .bodyLink {
-    color: $dark-complement;
+    color: $dark-background;
   }
 
   &:hover {
+    background: $white;
+    border: 5px solid $accent;
+
     .linkTitle,
     .bodyLink {
-      color: $header;
+      color: $accent;
     }
   }
 }
@@ -82,7 +88,7 @@
 }
 
 .pageContent {
-  padding: 10px 30px 30px;
+  padding: $content-padding;
 }
 
 .linkContainer {
