@@ -1,9 +1,18 @@
 @import './_variables';
 
+.linkTitle {
+  border-bottom: 2px solid $white;
+  font-weight: 300;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 0 10px !important;
+}
+
 .boxContainer {
   display: flex;
   justify-content: space-evenly;
   margin-top: 40px;
+  width: 100%;
 }
 
 .box {
@@ -11,13 +20,48 @@
   border-radius: 3px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
+  min-height: 350px;
   padding: 30px;
+  width: 100%;
+}
+
+.leftBox {
+  background: $dark-background;
+  padding: 10px 30px 30px;
+
+  .linkTitle,
+  .bodyLink {
+    color: $light-complement;
+  }
+
+  &:hover {
+    .linkTitle,
+    .bodyLink {
+      color: $white;
+    }
+  }
+}
+
+.rightBox {
+  background: $light-background;
+  padding: 10px 30px 30px;
+
+  .linkTitle,
+  .bodyLink {
+    color: $dark-complement;
+  }
+
+  &:hover {
+    .linkTitle,
+    .bodyLink {
+      color: $header;
+    }
+  }
 }
 
 .bodyLink {
   align-items: center;
-  color: $dark-gray;
   background: none;
   display: flex;
   flex-direction: column;
@@ -30,20 +74,21 @@
 .contentBody {
   background: $white;
   border-radius: 3px;
-  border: 5px solid $primary-accent;
-  padding: 10px 30px 30px;
-  width: 1000px;
+  width: 100%;
 }
 
 .content {
   font-size: 22px;
 }
 
+.pageContent {
+  padding: 10px 30px 30px;
+}
+
 .linkContainer {
   display: flex;
   justify-content: center;
   margin-left: none;
-  border: 1px solid $dark-gray;
   border-radius: 5px;
   padding: 20px;
   width: 350px;
@@ -55,25 +100,14 @@
 }
 
 .pageTitle {
-  color: $dark-gray;
   margin-top: 15px !important;
 }
 
 .secondaryTitle {
-  color: $ternary-accent;
 }
 
 .header {
   margin-left: 0;
-}
-
-.linkTitle {
-  border-bottom: 2px solid $dark-gray;
-  color: $dark-gray;
-  font-weight: 300;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin: 0 0 10px !important;
 }
 
 .schedulingWidget {

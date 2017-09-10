@@ -1,13 +1,12 @@
 // Eletric Tropic
-$primary-accent: #DB9D47;
-$secondary-accent: #FFD79F;
-$ternary-accent: #F87060;
-$cool-background: #EDEDED;
-$dark-background: #FFE3DC;
-$light-background: #fff;
-$dark-gray: #403F4C;
-$light-gray: #C2C5CE;
-$white: #fff;
+// $primary-accent: #DB9D47;
+// $secondary-accent: #FFD79F;
+// $ternary-accent: #F87060;
+// $cool-background: #EDEDED;
+// $dark-background: #FFE3DC;
+// $light-background: #fff;
+// $light-gray: #C2C5CE;
+// $white: #fff;
 
 
 // @mixin page-background {
@@ -21,6 +20,17 @@ $white: #fff;
 // filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#87a17b', endColorstr='#fff4ed', GradientType=0 );
 // }
 
+$accent: #119DA4;
+$header: #506C64;
+$white: #fff;
+$dark-gray: #403F4C;
+$dark-background: #220C10;
+$light-complement: #99DDC8;
+$light-background: #CACACA;
+$dark-complement: $dark-background;
+
+
+
 @mixin page-background {
-  background: #6A6C7B;
+  // background: #6A6C7B;
 }

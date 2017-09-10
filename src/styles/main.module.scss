@@ -12,13 +12,7 @@ h1 {
 .outerContainer {
   @include page-background;
   margin: 0 auto;
-  padding: 0 1rem;
   height: 100%;
-}
-
-.innerContainer {
-  margin: 0 auto;
-  padding: 1.25rem 1rem;
 }
 
 .nav {
@@ -30,12 +24,13 @@ h1 {
 
 .header{
   display: flex;
-  justify-content: space-between;
-  width: 1000px;
+  background: $header;
+  justify-content: space-around;
+  padding: 20px;
+  width: 100%;
 }
 
 .siteTitle {
-  color: $secondary-accent;
   margin: 0 0 30px;
 
   h5,
@@ -44,11 +39,11 @@ h1 {
   }
 
   h1 {
-    color: $primary-accent;
+    color: $light-complement;
   }
 
   h5 {
-    color: $secondary-accent;
+    color: $light-complement;
   }
 }
 
@@ -68,11 +63,16 @@ h1 {
 
 :global {
   a {
-    color: $secondary-accent;
     background: none;
   }
 }
 
 .navLink {
   background: none;
+  color: $white;
+  text-decoration: underline;
+
+  &:hover {
+    color: $light-complement;
+  }
 }
