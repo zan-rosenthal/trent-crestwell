@@ -16,10 +16,10 @@ export default () =>
       <p className={styles.content}>
         The method is useful for anyone with a body. Whether you are recovering from injury, seeking relief from a physical or emotional condition, trying to be more productive at work, or honing athletic or artistic abilities, Feldenkrais (can help/has something to offer/etc?)
       </p>
-      <h5>The Feldenkrais Method consists of two practices: </h5>
+      <h2 className={styles.transition}>The Feldenkrais Method consists of two practices: </h2>
     </div>
     <div className={styles.boxContainer}>
-      <div className={cx(styles.box, styles.leftBox)}>
+      <div className={cx(styles.box, styles.leftBox, styles.fullWidthBox)}>
         <ListLink
           listClass={styles.linkContainer}
           linkClass={styles.bodyLink}
@@ -31,7 +31,7 @@ export default () =>
           See Class Schedule
         </ListLink>
       </div>
-      <div className={cx(styles.box, styles.rightBox)}>
+      <div className={cx(styles.box, styles.rightBox, styles.fullWidthBox)}>
         <ListLink
           listClass={styles.linkContainer}
           linkClass={styles.bodyLink}

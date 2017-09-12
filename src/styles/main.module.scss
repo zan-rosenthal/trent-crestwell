@@ -1,8 +1,10 @@
 @import './_variables';
 
 body,
-#_gatsby {
-  height: 100%;
+html,
+body>div{
+  height: 100vh;
+  overflow-y: hidden;
 }
 
 h1 {
@@ -11,6 +13,8 @@ h1 {
 
 .outerContainer {
   @include page-background;
+  display: flex;
+  flex-direction: column;
   margin: 0 auto;
   height: 100%;
 }
@@ -25,8 +29,19 @@ h1 {
 .header{
   display: flex;
   background: $header;
+  flex: 0 1 15%;
   justify-content: space-between;
   padding: $content-padding;
+  width: 100%;
+}
+
+.footer {
+  display: flex;
+  background: $header;
+  flex: 1 1 10%;
+  justify-content: space-between;
+  padding: $content-padding;
+  height: 100%;
   width: 100%;
 }
 
@@ -47,10 +62,10 @@ h1 {
   }
 }
 
-.headerWrapper,
 .contentWrapper {
-  display: flex;
-  justify-content: center;
+  flex: 1 1 80%;
+  min-height: 70vh;
+  overflow: scroll;
 }
 
 .linkContainer {

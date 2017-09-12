@@ -27,5 +27,9 @@ export default ({ children }) =>
           to="/about-trent/">About Trent</ListLink>
       </ul>
     </header>
-    {children()}
+    <div className={styles.contentWrapper}>
+      {children()}
+    </div>
+    <footer className={styles.footer}>
+    </footer>
 </div>

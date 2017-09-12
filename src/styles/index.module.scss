@@ -24,7 +24,6 @@
   justify-content: center;
   min-height: 350px;
   padding: 30px;
-  width: 100%;
 
   .linkTitle {
     font-size: 28px;
@@ -33,6 +32,13 @@
   .bodyLink {
     font-size: 22px;
   }
+}
+
+.centeredBox {
+  align-self: cener;
+  border: 5px solid;
+  border-radius: 3px;
+  width: 30%;
 }
 
 .leftBox {
@@ -45,7 +51,6 @@
   }
 
   .linkTitle {
-    // border-bottom: 2px solid $white;
     text-decoration: underline;
   }
 
@@ -85,6 +90,10 @@
   }
 }
 
+.fullWidthBox {
+  width: 100%;
+}
+
 .bodyLink {
   align-items: center;
   background: none;
@@ -97,8 +106,13 @@
 }
 
 .contentBody {
+  align-items: center;
   background: $white;
   border-radius: 3px;
+  display: flex;
+  margin-top: 3%;
+  flex-direction: column;
+  height: 100%;
   width: 100%;
 }
 
@@ -135,8 +149,6 @@
   margin-left: 0;
 }
 
-.schedulingWidget {
-  display: flex;
-  justify-content: center;
-  width: 100%;
+.transition {
+  margin-top: 8%;
 }
