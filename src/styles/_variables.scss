@@ -1,24 +1,5 @@
-// Eletric Tropic
-// $primary-accent: #DB9D47;
-// $secondary-accent: #FFD79F;
-// $ternary-accent: #F87060;
-// $cool-background: #EDEDED;
-// $dark-background: #FFE3DC;
-// $light-background: #fff;
-// $light-gray: #C2C5CE;
-// $white: #fff;
+@import url('https://fonts.googleapis.com/css?family=Hind|Oranienbaum|Raleway:400,700|Rokkitt:400,800|Shrikhand|Ultra');
 
-
-// @mixin page-background {
-//   background: rgba(135,161,123,1);
-// background: -moz-linear-gradient(top, rgba(135,161,123,1) 0%, rgba(255,244,237,1) 19%, rgba(255,244,237,1) 100%);
-// background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(135,161,123,1)), color-stop(19%, rgba(255,244,237,1)), color-stop(100%, rgba(255,244,237,1)));
-// background: -webkit-linear-gradient(top, rgba(135,161,123,1) 0%, rgba(255,244,237,1) 19%, rgba(255,244,237,1) 100%);
-// background: -o-linear-gradient(top, rgba(135,161,123,1) 0%, rgba(255,244,237,1) 19%, rgba(255,244,237,1) 100%);
-// background: -ms-linear-gradient(top, rgba(135,161,123,1) 0%, rgba(255,244,237,1) 19%, rgba(255,244,237,1) 100%);
-// background: linear-gradient(to bottom, rgba(135,161,123,1) 0%, rgba(255,244,237,1) 19%, rgba(255,244,237,1) 100%);
-// filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#87a17b', endColorstr='#fff4ed', GradientType=0 );
-// }
 
 $accent: #628395;
 $header: #506C64;
@@ -27,13 +8,22 @@ $dark-gray: #403F4C;
 $dark-background: #220C10;
 $light-complement: #8FBED8;
 $light-background: #CACACA;
+$millenial-pink: saturate(lighten($light-background, 13%), 75%);
 $dark-complement: $dark-background;
-$content-padding: 10px 10% 30px;
+$content-padding: 20px 10% 30px;
+$title-font: 'Shrikhand', 'Work Sans';
+$content-font: 'Work Sans';
 
 // $header: #717C89;
 // $dark-background: #182327;
 
 
-@mixin page-background {
-  // background: #6A6C7B;
+@mixin header-gradient {
+  background: #feb95f; /* Old browsers */
+  background: -moz-linear-gradient(-45deg,  #feb95f 0%, #fed8a7 47%, #fef2e1 74%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(-45deg,  #feb95f 0%,#fed8a7 47%,#fef2e1 74%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(135deg,  #feb95f 0%,#fed8a7 47%,#fef2e1 74%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#feb95f', endColorstr='#fef2e1',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+  -webkit-background-clip: text;
+ -webkit-text-fill-color: transparent;
 }

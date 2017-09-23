@@ -3,9 +3,12 @@
 .linkTitle {
   text-align: center;
   font-weight: 300;
+  font-family: $content-font;
+  letter-spacing: 1px;
   flex-wrap: wrap;
   justify-content: center;
   margin: 0 0 10px !important;
+  text-decoration: none !important;
 }
 
 .boxContainer {
@@ -32,11 +35,17 @@
   .bodyLink {
     font-size: 22px;
   }
+
+  &:hover {
+    .linkTitle {
+      text-decoration: underline !important;
+    }
+  }
 }
 
 .centeredBox {
   align-self: cener;
-  border: 5px solid;
+  border: 2px solid;
   border-radius: 3px;
   width: 30%;
 }
@@ -56,11 +65,11 @@
 
   &:hover {
     background: $white;
-    border: 5px solid $accent;
+    border: 1px solid $header;
 
     .linkTitle,
     .bodyLink {
-      color: $accent;
+      color: $header;
     }
   }
 }
@@ -71,21 +80,20 @@
 
   .linkTitle,
   .bodyLink {
-    color: $dark-background;
+    color: saturate(lighten($dark-background, 10%), 10%);
   }
 
   .linkTitle {
-    // border-bottom: 2px solid $dark-background;
     text-decoration: underline;
   }
 
   &:hover {
     background: $white;
-    border: 5px solid $accent;
+    border: 2px solid $header;
 
     .linkTitle,
     .bodyLink {
-      color: $accent;
+      color: $header;
     }
   }
 }
@@ -122,6 +130,10 @@
 
 .pageContent {
   padding: $content-padding;
+  h1,
+  h2 {
+    color: $header;
+  }
 }
 
 .linkContainer {
@@ -142,7 +154,24 @@
   margin-top: 15px !important;
 }
 
-.secondaryTitle {
+.schedulingLink {
+  .linkContainer {
+    width: auto;
+  }
+
+  .linkTitle {
+    color: $header;
+    font-size: 32px;
+    width: auto;
+  }
+
+  &:hover {
+    .linkTitle {
+      text-decoration: underline !important;
+    }
+  }
+
+  width: auto;
 }
 
 .header {

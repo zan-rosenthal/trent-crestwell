@@ -1,8 +1,7 @@
 import React from "react"
-import styles from '../styles/index.module.scss'
 import ListLink from '../components/ListLink'
+import styles from '../styles/index.module.scss'
 import cx from 'classnames'
-
 
 export default () =>
     <div className={styles.contentBody}>

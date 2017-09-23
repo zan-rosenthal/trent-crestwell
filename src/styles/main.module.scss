@@ -12,7 +12,6 @@ h1 {
 }
 
 .outerContainer {
-  @include page-background;
   display: flex;
   flex-direction: column;
   margin: 0 auto;
@@ -21,16 +20,26 @@ h1 {
 
 .nav {
   float: right;
+  display: flex;
+}
+
+.navList {
   list-style: none;
   display: flex;
   justify-content: space-around;
 }
 
+.menuIcon {
+  cursor: pointer;
+  margin: 5px -30px 0 20px;
+}
+
 .header{
   display: flex;
   background: $header;
-  flex: 0 1 15%;
+  flex: 0 1 20%;
   justify-content: space-between;
+  min-height: 200px;
   padding: $content-padding;
   width: 100%;
 }
@@ -54,16 +63,32 @@ h1 {
   }
 
   h1 {
+    font-family: $title-font;
+    font-weight: 400;
     color: $white;
+    letter-spacing: 1.8px;
   }
 
+
   h5 {
-    color: $white;
+    color: $millenial-pink;
+    font-size: 22px;
+  }
+
+  &:hover {
+    h1 {
+      color: $millenial-pink;
+      text-decoration: underline;
+    }
+
+    h5 {
+      color: $white;
+    }
   }
 }
 
 .contentWrapper {
-  flex: 1 1 80%;
+  flex: 1 1 70%;
   min-height: 70vh;
   overflow: scroll;
 }
@@ -88,6 +113,6 @@ h1 {
   text-decoration: underline;
 
   &:hover {
-    color: $light-complement;
+    color: $millenial-pink;
   }
 }
