@@ -9,6 +9,11 @@
   justify-content: center;
   margin: 0 0 10px !important;
   text-decoration: none !important;
+
+  sup {
+    font-size: medium;
+    margin-left: 3px;
+  }
 }
 
 .boxContainer {
@@ -152,6 +157,13 @@
 
 .pageTitle {
   margin-top: 15px !important;
+
+  sup {
+    top: -0.8em;
+    font-size: 18px;
+    right: 0;
+    margin-right: 5px;
+  }
 }
 
 .schedulingLink {

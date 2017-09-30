@@ -16,6 +16,7 @@ h1 {
   flex-direction: column;
   margin: 0 auto;
   height: 100%;
+  overflow-y: scroll;
 }
 
 .nav {
@@ -27,6 +28,12 @@ h1 {
   list-style: none;
   display: flex;
   justify-content: space-around;
+}
+
+.hiddenNav {
+  display: none;
+  transform: translateX(350px);
+  transition: all 5s cubic-bezier;
 }
 
 .menuIcon {
@@ -89,8 +96,8 @@ h1 {
 
 .contentWrapper {
   flex: 1 1 70%;
-  min-height: 70vh;
-  overflow: scroll;
+  min-height: 100vh;
+  padding-bottom: 100px;
 }
 
 .linkContainer {

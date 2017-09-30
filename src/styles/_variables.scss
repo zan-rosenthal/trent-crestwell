@@ -16,14 +16,3 @@ $content-font: 'Work Sans';
 
 // $header: #717C89;
 // $dark-background: #182327;
-
-
-@mixin header-gradient {
-  background: #feb95f; /* Old browsers */
-  background: -moz-linear-gradient(-45deg,  #feb95f 0%, #fed8a7 47%, #fef2e1 74%); /* FF3.6-15 */
-  background: -webkit-linear-gradient(-45deg,  #feb95f 0%,#fed8a7 47%,#fef2e1 74%); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(135deg,  #feb95f 0%,#fed8a7 47%,#fef2e1 74%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#feb95f', endColorstr='#fef2e1',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
-  -webkit-background-clip: text;
- -webkit-text-fill-color: transparent;
-}
