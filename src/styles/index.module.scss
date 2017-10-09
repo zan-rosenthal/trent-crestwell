@@ -3,7 +3,7 @@
 .linkTitle {
   text-align: center;
   font-weight: 300;
-  font-family: $content-font;
+  font-family: $title-font;
   letter-spacing: 1px;
   flex-wrap: wrap;
   justify-content: center;
@@ -39,6 +39,7 @@
 
   .bodyLink {
     font-size: 22px;
+    font-family: $content-font;
   }
 
   &:hover {
@@ -130,6 +131,8 @@
 }
 
 .content {
+  font-family: $content-font;
+  font-weight: 400;
   font-size: 22px;
 }
 

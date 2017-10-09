@@ -9,12 +9,13 @@
   },
   "dependencies": {
     "classnames": "^2.2.5",
-    "gatsby": "^1.4.1",
-    "gatsby-link": "^1.4.1",
+    "gatsby": "1.9.*",
+    "gatsby-link": "1.6.*",
     "gatsby-plugin-sass": "^1.0.2",
     "gatsby-plugin-typography": "^1.7.3",
     "grommet": "^1.6.0",
-    "react-hamburger-menu": "^1.0.0",
+    "react-drawer": "^1.2.5",
+    "react-window-size": "^1.0.1",
     "typography-theme-fairy-gates": "^0.15.11"
   }
 }

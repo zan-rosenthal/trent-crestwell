@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Hind|Oranienbaum|Raleway:400,700|Rokkitt:400,800|Shrikhand|Ultra');
+@import url('https://fonts.googleapis.com/css?family=Work+Sans: 100, PT+Sans: 400, 700');
 
 
 $accent: #628395;
@@ -8,11 +8,10 @@ $dark-gray: #403F4C;
 $dark-background: #220C10;
 $light-complement: #8FBED8;
 $light-background: #CACACA;
-$millenial-pink: saturate(lighten($light-background, 13%), 75%);
+$millenial-pink: #E0E9DC;
 $dark-complement: $dark-background;
 $content-padding: 20px 10% 30px;
-$title-font: 'Shrikhand', 'Work Sans';
-$content-font: 'Work Sans';
+$title-font: 'Work Sans';
+$content-font: 'PT Sans';
 
-// $header: #717C89;
-// $dark-background: #182327;
+// $millenial-pink: #EBBAB9;
